@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Container, ContainerTitle } from '../../GlobalStyles';
 
 export const TaskTitle = styled(ContainerTitle)`
-  width: 22%;
+  width: 100%;
   font-size: 19px;
 `;
 export const TaskContainer = styled(Container)`
@@ -11,7 +11,7 @@ export const TaskContainer = styled(Container)`
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  width: 22%;
+  width: 100%;
 `;
 
 export const Task = styled.span`

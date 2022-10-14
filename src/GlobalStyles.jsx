@@ -14,13 +14,20 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const Wrapper = styled.div`
-  height: 100%;
-  width: 100%;
   padding: 29px 33px;
   background: #f4f5f7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
-export const Section = styled.section``;
-export const Aside = styled.aside``;
+export const Section = styled.section`
+  width: 77%;
+  height: 700px;
+`;
+export const Aside = styled.aside`
+  width: 22%;
+  height: 700px;
+`;
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
@@ -32,7 +39,7 @@ export const Container = styled.div`
   border-radius: 0px 0px 12px 12px;
   padding: 16px 24px;
   display: flex;
-  height: 700px;
+  height: 100%;
 `;
 export const ContainerTitle = styled.div`
   font-weight: 600;
