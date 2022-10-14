@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import GlobalStyle, { Wrapper } from './GlobalStyles';
+import TaskTab from './Components/TaskTab/TaskTab.jsx';
+import BussinesContext from './Components/BussinessContext/BussinesContext';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <GlobalStyle />
+      <TaskTab />
+      <BussinesContext></BussinesContext>
+    </Wrapper>
   );
 }
 
