@@ -1,14 +1,26 @@
+import Active from '../Icons/Active.svg';
+import Check from '../Icons/Check.svg';
+import Lock from '../Icons/Lock.svg';
+
 export const data = [
   {
     title: 'Application Setup',
     status: 'completed',
-    bussinessContext: {},
+    image: Check,
+
+    bussinessContext: {
+      bussinessTitle: '',
+      content: '',
+      created_at: '',
+    },
   },
   {
     title: 'Static Books List',
     status: 'completed',
+    image: Check,
+
     bussinessContext: {
-      title: '',
+      bussinessTitle: '',
       content: '',
       created_at: '',
     },
@@ -16,8 +28,9 @@ export const data = [
   {
     title: 'Administration Panel',
     status: 'completed',
+    image: Check,
     bussinessContext: {
-      title: '',
+      bussinessTitle: '',
       content: '',
       created_at: '',
     },
@@ -25,8 +38,9 @@ export const data = [
   {
     title: 'Connect Admin with Frontend',
     status: 'active',
+    image: Active,
     bussinessContext: {
-      title: '',
+      bussinessTitle: '',
       content: '',
       created_at: '',
     },
@@ -34,8 +48,9 @@ export const data = [
   {
     title: 'Book Review Feature',
     status: 'not-available',
+    image: Lock,
     bussinessContext: {
-      title: '',
+      bussinessTitle: '',
       content: '',
       created_at: '',
     },
