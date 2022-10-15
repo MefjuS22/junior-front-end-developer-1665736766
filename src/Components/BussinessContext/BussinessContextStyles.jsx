@@ -11,6 +11,9 @@ export const BussinessContainer = styled(Container)`
   width: 100%;
   height: 700px;
   padding: 0 0 4px 4px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -30,6 +33,9 @@ export const NotificationContainer = styled(Container)`
   padding: 12px 8px 8px 8px;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 `;
 
 export const BussinessContextBig = styled(Container)`
@@ -38,6 +44,11 @@ export const BussinessContextBig = styled(Container)`
   border-radius: 0;
   box-shadow: none;
   flex-direction: column;
+  @media screen and (max-width: 767px) {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+  }
 `;
 
 export const BussinessContextTitle = styled.h1`
@@ -47,10 +58,17 @@ export const BussinessContextTitle = styled.h1`
   color: #242325;
 `;
 export const BussinessContent = styled.div`
+  flex-direction: row;
   font-weight: 500;
   font-size: 12px;
   line-height: 24px;
   color: #6b778c;
+  margin-left: 56px;
+  overflow: auto;
+  @media screen and (max-width: 767px) {
+    height: 500px;
+    overflow: scroll;
+  }
 `;
 
 export const BussinessAuthor = styled.span`
@@ -66,6 +84,30 @@ export const BussinessDate = styled.span`
   font-size: 10px;
   line-height: 14px;
   color: #6b778c;
+`;
+
+export const BussinessInfoWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+`;
+
+export const BussinessAvatarWrapper = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 48px;
+  width: 48px;
+
+  border-radius: 50%;
+  border: 1px solid #d4d6da;
+  > img {
+    background: #0165ff;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+  }
 `;
 
 export const Notification = styled.div`
@@ -113,12 +155,14 @@ export const NotificationTitle = styled.h2`
 
 export const NotificationContent = styled.span`
   display: inline-block;
-  width: 250px;
+  position: relative;
+  width: 200px;
   font-weight: 500;
   font-size: 10px;
   line-height: 14px;
   color: #6b778c;
   text-overflow: ellipsis;
   white-space: nowrap;
+  word-break: break-all;
   overflow: hidden;
 `;
