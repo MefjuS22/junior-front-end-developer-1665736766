@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavBar } from './NavbarStyles';
-
-import Logo from './Union.png';
+import Logo from '../../Icons/logo.svg';
 const Navbar = () => {
   return (
     <NavBar>

@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
   width: 4px;
 }
 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #F4F5F7;
