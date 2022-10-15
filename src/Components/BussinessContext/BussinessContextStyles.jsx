@@ -163,7 +163,7 @@ export const NotificationTitle = styled.h2`
 export const NotificationContent = styled.span`
   display: inline-block;
   position: relative;
-  width: 200px;
+  max-width: 100%;
   font-weight: 500;
   font-size: 10px;
   line-height: 14px;
