@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavBar } from './NavbarStyles';
+
 import Logo from './Union.png';
 const Navbar = () => {
   return (
