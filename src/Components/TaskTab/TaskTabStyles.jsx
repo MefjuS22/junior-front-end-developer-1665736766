@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Container, ContainerTitle } from '../../GlobalStyles';
+import styled from "styled-components";
+import { Container, ContainerTitle } from "../../GlobalStyles";
 
 export const TaskTitle = styled(ContainerTitle)`
   width: 100%;
@@ -15,12 +15,11 @@ export const TaskContainer = styled(Container)`
 `;
 
 export const Task = styled.span`
-  height: 21px;
   display: flex;
   color: ${({ status }) =>
-    status === 'not-available' ? '#AEB5C1' : '#242325'};
+    status === "not-available" ? "#AEB5C1" : "#242325"};
   gap: 0.5rem;
-  font-weight: ${({ status }) => (status === 'active' ? '600' : '500')};
+  font-weight: ${({ status }) => (status === "active" ? "600" : "500")};
   cursor: pointer;
 `;
 

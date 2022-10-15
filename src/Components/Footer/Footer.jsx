@@ -2,7 +2,6 @@ import React from 'react';
 import { FooterContent, FooterWrapper, FooterItem } from './FooterStyles';
 const Footer = () => {
   return (
-    <>
       <FooterWrapper>
         <FooterContent>
           <FooterItem>Terms of service</FooterItem>
@@ -17,7 +16,6 @@ const Footer = () => {
           <FooterItem>Last update 10/09/2022</FooterItem>
         </FooterContent>
       </FooterWrapper>
-    </>
   );
 };
 
