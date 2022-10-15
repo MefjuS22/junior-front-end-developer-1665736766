@@ -4,10 +4,12 @@ export const NavBar = styled.header`
   width: 100%;
   display: flex;
   height: 60px;
-  padding: 10px 50px 50px 0;
+  padding: 10px 40px 50px 40px;
   justify-content: space-between;
+  align-items: baseline;
   > img {
-    background-color: red;
+    height: fit-content;
+    width: fit-content;
   }
   > div {
     display: flex;

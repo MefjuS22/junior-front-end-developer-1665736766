@@ -12,8 +12,10 @@ export const data = [
     bussinessContext: [
       {
         id: 9,
+        isNew: true,
         avatar: 'https://cdn-icons-png.flaticon.com/512/168/168724.png',
         bussinessTitle: 'Test',
+        author: 'Test1',
         content: 'test 1st',
         created_at: '2012-04-23T18:25:43.511Z',
       },
@@ -28,8 +30,10 @@ export const data = [
     bussinessContext: [
       {
         id: 8,
+        isNew: false,
         avatar: 'https://cdn-icons-png.flaticon.com/512/168/168724.png',
         bussinessTitle: '123',
+        author: 'Test',
         content: 'Test 2nd',
         created_at: '2012-04-03T18:25:43.511Z',
       },
@@ -44,8 +48,9 @@ export const data = [
       {
         id: 7,
         avatar: 'https://cdn-icons-png.flaticon.com/512/168/168724.png',
-        bussinessTitle: 'Lorem ipsum dolor sit amet.',
-        isNew: false,
+        bussinessTitle: 'Join avengers',
+        author: 'Tony Stark',
+        isNew: true,
         content:
           'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quaerat labore ipsum consequuntur excepturi quisquam nostrum reprehenderit, sunt facere incidunt. Distinctio fugit voluptatum recusandae qui. Ipsa exercitationem quos qui deleniti quaerat molestias aliquam facilis. Unde veniam optio voluptas ad voluptatibus suscipit, pariatur doloremque nesciunt, laboriosam modi nisi assumenda molestias reprehenderit.',
         created_at: '2012-04-23T18:25:43.511Z',
@@ -54,7 +59,8 @@ export const data = [
         id: 6,
         avatar: 'https://cdn-icons-png.flaticon.com/512/168/168724.png',
         bussinessTitle: 'Lorem ipsum dolor sit .',
-        isNew: false,
+        author: 'Boss',
+        isNew: true,
         content:
           'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quaerat labore ipsum consequuntur excepturi quisquam nostrum reprehenderit, sunt facere incidunt. Distinctio fugit voluptatum recusandae qui. Ipsa exercitationem quos qui deleniti quaerat molestias aliquam facilis. Unde veniam optio voluptas ad voluptatibus suscipit, pariatur doloremque nesciunt, laboriosam modi nisi assumenda molestias reprehenderit.',
         created_at: '2012-04-23T18:25:43.511Z',
@@ -63,6 +69,17 @@ export const data = [
         id: 5,
         avatar: 'https://cdn-icons-png.flaticon.com/512/168/168724.png',
         bussinessTitle: 'Lorem ipsum .',
+        author: 'NoName',
+        isNew: false,
+        content:
+          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quaerat labore ipsum consequuntur excepturi quisquam nostrum reprehenderit, sunt facere incidunt. Distinctio fugit voluptatum recusandae qui. Ipsa exercitationem quos qui deleniti quaerat molestias aliquam facilis. Unde veniam optio voluptas ad voluptatibus suscipit, pariatur doloremque nesciunt, laboriosam modi nisi assumenda molestias reprehenderit.',
+        created_at: '2012-04-23T18:25:43.511Z',
+      },
+      {
+        id: 11,
+        avatar: 'https://cdn-icons-png.flaticon.com/512/168/168724.png',
+        bussinessTitle: 'Lorem ipsum .',
+        author: 'Some guy',
         isNew: false,
         content:
           'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quaerat labore ipsum consequuntur excepturi quisquam nostrum reprehenderit, sunt facere incidunt. Distinctio fugit voluptatum recusandae qui. Ipsa exercitationem quos qui deleniti quaerat molestias aliquam facilis. Unde veniam optio voluptas ad voluptatibus suscipit, pariatur doloremque nesciunt, laboriosam modi nisi assumenda molestias reprehenderit.',
@@ -79,10 +96,10 @@ export const data = [
       {
         id: 1,
         avatar: 'https://cdn-icons-png.flaticon.com/512/168/168724.png',
-        bussinessTitle: 'Im dead lol',
-        author: 'John Paul',
-        isNew: false,
-        content: 'jajajajaja',
+        bussinessTitle: 'Acceptance',
+        author: 'HR',
+        isNew: true,
+        content: 'You got the job! Come sign documents',
         created_at: '2005-04-02T21:09:43.511Z',
       },
       {
@@ -116,6 +133,7 @@ export const data = [
         id: 4,
         avatar: 'https://cdn-icons-png.flaticon.com/512/168/168724.png',
         bussinessTitle: 'Lorem ipsum dolor sit amet.',
+        author: 'Johnny Depp',
         content:
           'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quaerat labore ipsum consequuntur excepturi quisquam nostrum reprehenderit, sunt facere incidunt. Distinctio fugit voluptatum recusandae qui. Ipsa exercitationem quos qui deleniti quaerat molestias aliquam facilis. Unde veniam optio voluptas ad voluptatibus suscipit, pariatur doloremque nesciunt, laboriosam modi nisi assumenda molestias reprehenderit.',
         created_at: '2012-04-23T18:25:43.511Z',

@@ -4,6 +4,7 @@ import { Container, ContainerTitle } from '../../GlobalStyles';
 export const BussinessTitle = styled(ContainerTitle)`
   color: #0165ff;
   width: 100%;
+
   gap: 1rem;
 `;
 
@@ -33,8 +34,14 @@ export const NotificationContainer = styled(Container)`
   padding: 12px 8px 8px 8px;
   display: flex;
   flex-direction: column;
+
   @media screen and (max-width: 767px) {
+    margin-top: 10px;
     width: 100%;
+    height: 300px;
+    overflow: scroll;
+    scrollbar-color: red grey;
+    border-radius: 10px 10px 10px 10px;
   }
 `;
 
