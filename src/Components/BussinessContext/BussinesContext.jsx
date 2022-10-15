@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   BussinessContainer,
   BussinessTitle,
@@ -14,17 +14,23 @@ import {
   BussinessContent,
   BussinessAuthor,
   BussinessDate,
+  BussinessInfoWrapper,
+  BussinessAvatarWrapper,
 } from './BussinessContextStyles';
 import { Section } from '../../GlobalStyles';
 import Tab from '../../Icons/Tab.svg';
 import { data } from '../../Data/data';
+import { relativeDays } from './DateDiff';
 
-const BussinesContext = () => {
+const BussinesContext = ({ activeTask }) => {
   const [active, setActive] = useState();
   const [read, setRead] = useState([]);
   const [activeContext, setActiveContext] = useState(
-    data.find((value) => value.active)
+    data.find((value) => value.taskId === activeTask)
   );
+  useEffect(() => {
+    setActiveContext(data.find((value) => value.taskId === activeTask));
+  }, [activeTask]);
 
   return (
     <Section>
@@ -58,7 +64,7 @@ const BussinesContext = () => {
                 </NotificationNew>
                 {element.author} •{' '}
                 {
-                  new Date(`${element.created_at}`)
+                  new Date(element.created_at)
                     .toLocaleDateString('en-US', {
                       weekday: 'short',
                       year: 'numeric',
@@ -85,21 +91,35 @@ const BussinesContext = () => {
               <BussinessContextTitle>
                 {element.bussinessTitle}
               </BussinessContextTitle>
-              <BussinessAuthor> {element.author}</BussinessAuthor>
-              <BussinessDate>
-                {' '}
-                •
-                {
-                  new Date(`${element.created_at}`)
-                    .toLocaleDateString('en-US', {
-                      weekday: 'short',
-                      year: 'numeric',
-                      month: 'short',
-                      day: 'numeric',
-                    })
-                    .split(',')[1]
-                }
-              </BussinessDate>
+
+              <BussinessInfoWrapper>
+                <BussinessAvatarWrapper>
+                  <img
+                    src={element.avatar}
+                    alt=""
+                    // on data there is only one image
+                  />
+                </BussinessAvatarWrapper>
+                <BussinessAuthor> {element.author}</BussinessAuthor>
+                <BussinessDate>
+                  {' • '}
+                  {relativeDays(new Date(element.created_at).getTime())},
+                  {
+                    new Date(element.created_at)
+                      .toLocaleDateString('en-US', {
+                        weekday: 'short',
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric',
+                      })
+                      .split(',')[1]
+                  }
+                  {' • '}
+                  {new Date(element.created_at).getHours() +
+                    ':' +
+                    new Date(element.created_at).getMinutes()}
+                </BussinessDate>
+              </BussinessInfoWrapper>
               <BussinessContent>{element.content}</BussinessContent>
             </BussinessContextBig>
           ))}

@@ -6,6 +6,16 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    /* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F4F5F7;
+  border-radius: 5px;
+}
 
  }
  body {
@@ -19,14 +29,25 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 export const Section = styled.section`
   width: 77%;
   height: 700px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 `;
 export const Aside = styled.aside`
   width: 22%;
   height: 700px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 10px;
+  }
 `;
 export const Row = styled.div`
   display: flex;

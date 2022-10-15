@@ -15,11 +15,13 @@ export const TaskContainer = styled(Container)`
 `;
 
 export const Task = styled.span`
+  height: 21px;
   display: flex;
   color: ${({ status }) =>
     status === 'not-available' ? '#AEB5C1' : '#242325'};
   gap: 0.5rem;
   font-weight: ${({ status }) => (status === 'active' ? '600' : '500')};
+  cursor: pointer;
 `;
 
 export const ImageWrapper = styled.div`
