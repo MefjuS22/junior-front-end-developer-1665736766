@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Container, ContainerTitle } from '../../GlobalStyles';
+import styled from "styled-components";
+import { Container, ContainerTitle } from "../../GlobalStyles";
 
 export const BussinessTitle = styled(ContainerTitle)`
   color: #0165ff;
@@ -120,10 +120,10 @@ export const BussinessAvatarWrapper = styled.div`
 export const Notification = styled.div`
   height: 100px;
   width: 100%;
-  background: ${({ read }) => (read ? 'transparent' : '#ffffff')};
+  background: ${({ read }) => (read ? "transparent" : "#ffffff")};
   border-radius: 8px;
   box-shadow: ${({ active }) =>
-    active ? '0px 8px 16px rgba(84, 84, 84, 0.2)' : '0'};
+    active ? "0px 8px 16px rgba(84, 84, 84, 0.2)" : "0"};
   padding: 14px 20px 20px 20px;
   margin-bottom: 8px;
   cursor: pointer;
@@ -141,7 +141,7 @@ export const NotificationNew = styled.div`
   font-size: 10px;
   color: #eaf2fe;
   text-transform: uppercase;
-  display: ${({ isNew }) => (isNew ? 'inline' : 'none')};
+  display: ${({ isNew }) => (isNew ? "inline" : "none")};
 `;
 
 export const NotificationData = styled.h3`
@@ -157,13 +157,13 @@ export const NotificationData = styled.h3`
 export const NotificationTitle = styled.h2`
   font-weight: 700;
   font-size: 12px;
-  color: ${({ isNew }) => (isNew ? '#0165FF' : '#242325')};
+  color: ${({ isNew }) => (isNew ? "#0165FF" : "#242325")};
 `;
 
 export const NotificationContent = styled.span`
   display: inline-block;
   position: relative;
-  width: 200px;
+  max-width: 100%;
   font-weight: 500;
   font-size: 10px;
   line-height: 14px;
