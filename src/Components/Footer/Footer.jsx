@@ -11,9 +11,7 @@ const Footer = () => {
           <FooterItem>Copyright</FooterItem>
         </FooterContent>
         <FooterContent>
-          <FooterItem>nerds.family Version 1.2</FooterItem>
-          <FooterItem>•</FooterItem>
-          <FooterItem>Last update 10/09/2022</FooterItem>
+          <FooterItem>Last update 27/10/2022</FooterItem>
         </FooterContent>
       </FooterWrapper>
   );
